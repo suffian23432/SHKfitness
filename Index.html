@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHKfitness | Home Workouts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-dumbbell"></i>
+                <h1>SHK<span>fitness</span></h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#workouts">Workouts</a></li>
+                    <li><a href="#tracker">Tracker</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Effective Home Workouts</h1>
+            <p>Transform your fitness journey with quick, effective workouts designed for busy lifestyles. Stay fit, healthy, and energized.</p>
+            <a href="#workouts" class="btn">Get Started</a>
+            <a href="#tracker" class="btn btn-accent">Track Workout</a>
+        </div>
+    </section>
+
+    <!-- Workouts Section -->
+    <section id="workouts">
+        <div class="container">
+            <h2 class="section-title">Quick Workout Routines</h2>
+            
+            <div class="workout-cards">
+                <!-- Card 1 -->
+                <div class="workout-card">
+                    <div class="workout-card-header">
+                        <h2>Desk Break Routine</h2>
+                        <div class="time-badge">5-7 minutes</div>
+                    </div>
+                    <div class="workout-card-body">
+                        <h3>Perfect for busy schedules</h3>
+                        <div class="exercise-preview">
+                            <div class="exercise-icon">
+                                <i class="fas fa-user"></i>
+                                <span>Neck Stretches</span>
+                            </div>
+                            <div class="exercise-icon">
+                                <i class="fas fa-user"></i>
+                                <span>Shoulder Rolls</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Neck stretches: 30 seconds each side</li>
+                            <li>Shoulder rolls: 10 forward, 10 backward</li>
+                            <li>Chair squats: 15 reps</li>
+                            <li>Wrist stretches: 30 seconds each</li>
+                            <li>Seated leg lifts: 20 reps per leg</li>
+                        </ul>
+                        <button class="btn start-workout-btn" data-workout="desk-break">Start This Workout</button>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="workout-card">
+                    <div class="workout-card-header">
+                        <h2>Morning Energizer</h2>
+                        <div class="time-badge">10-12 minutes</div>
+                    </div>
+                    <div class="workout-card-body">
+                        <h3>Boost your energy for the day</h3>
+                        <div class="exercise-preview">
+                            <div class="exercise-icon">
+                                <i class="fas fa-running"></i>
+                                <span>Jumping Jacks</span>
+                            </div>
+                            <div class="exercise-icon">
+                                <i class="fas fa-user"></i>
+                                <span>Push-ups</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Jumping jacks: 1 minute</li>
+                            <li>Push-ups (or wall push-ups): 15 reps</li>
+                            <li>Plank: 45 seconds</li>
+                            <li>Bodyweight squats: 20 reps</li>
+                            <li>Lunges: 10 per leg</li>
+                            <li>High knees: 1 minute</li>
+                        </ul>
+                        <button class="btn start-workout-btn" data-workout="morning-energizer">Start This Workout</button>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="workout-card">
+                    <div class="workout-card-header">
+                        <h2>Evening Recovery</h2>
+                        <div class="time-badge">15 minutes</div>
+                    </div>
+                    <div class="workout-card-body">
+                        <h3>Relax and rejuvenate your body</h3>
+                        <div class="exercise-preview">
+                            <div class="exercise-icon">
+                                <i class="fas fa-spa"></i>
+                                <span>Cat-Cow Stretch</span>
+                            </div>
+                            <div class="exercise-icon">
+                                <i class="fas fa-spa"></i>
+                                <span>Downward Dog</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Cat-cow stretch: 1 minute</li>
+                            <li>Downward dog: 1 minute</li>
+                            <li>Child's pose: 1 minute</li>
+                            <li>Standing quad stretch: 30 sec each leg</li>
+                            <li>Side stretches: 30 sec each side</li>
+                            <li>Deep breathing: 2 minutes</li>
+                        </ul>
+                        <button class="btn start-workout-btn" data-workout="evening-recovery">Start This Workout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workout Tracker -->
+    <section id="tracker">
+        <div class="container">
+            <h2 class="section-title">Workout Tracker</h2>
+            
+            <div class="tracker-container">
+                <div class="tracker-header">
+                    <div>
+                        <h3>Today's Workout Plan</h3>
+                        <p id="current-date">Loading date...</p>
+                    </div>
+                    
+                    <div class="tracker-stats">
+                        <div class="stat-box">
+                            <div class="stat-value" id="completed-count">0</div>
+                            <div class="stat-label">Completed</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-value" id="total-count">5</div>
+                            <div class="stat-label">Total Exercises</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-value" id="streak-count">0</div>
+                            <div class="stat-label">Day Streak</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="exercise-list">
+                    <!-- Exercise items will be added dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About SHKfitness</h3>
+                    <p>Your personal fitness companion for effective home workouts. We provide simple, effective routines that fit into your daily schedule.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#workouts">Workouts</a>
+                    <a href="#tracker">Tracker</a>
+                    <a href="#about">About</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> SHKfitness@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 SHKfitness | Fitness for Everyone</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
